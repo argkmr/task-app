@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:rgba(155, 98, 45, 0.923);
+}
+
+.canvas{
+    background-color: bisque;
+    min-height: 100vh;
+    width: 80vw;
+    background-color: bisque;
+    margin: 0em auto;
+}
+
+#title{
+    position: relative;
+    top:1vh;
+    width: 70vw;
+    margin: auto;
+    border-radius: 0.25em;
+    min-height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    padding: 0.2em;
+    background-image: linear-gradient(rgb(211, 126, 14), rgb(240, 200, 154));
+}
+
+#container{
+    /* border: 1px solid black; */
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    width: 70vw;
+    margin:2em auto;
+}
+
+#input,#textArea,#btn{
+    border-radius: 0.25em;
+    padding:0.25em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:800px;
+    font-size: medium;
+    border: 0.2px solid black;
+}
+
+#input, #textArea{
+    background-image:linear-gradient(rgb(226, 163, 114), rgb(247, 220, 189)); 
+    color: black;
+}
+
+#btn{
+    cursor: pointer;
+    background-color: rgb(231, 188, 143);
+    transition: all 0.35s;
+}
+
+#btn:hover{
+    background-color: rgb(235, 126, 86);
+}
+
+#my-tasks{
+    min-height: 40vh;
+    /* border: 1px solid black; */
+    width: 70vw;
+    margin: 0px auto;
+    background-image: linear-gradient(rgb(242, 139, 60), rgb(209, 168, 122));
+    padding: 0.5em;
+}
+
+.each-task{
+    min-height: 15vh;
+    border: 1px solid rgb(109, 87, 79);
+    display: flex;
+    flex-direction: column;
+    /* top right+left bottom */
+    margin: 0px auto 10px; 
+    font-family: 'Times New Roman', Times, serif;
+    padding:0.5em;
+    background-image: linear-gradient(rgb(182, 147, 103), rgb(237, 189, 153));
+
+}
+
+#taskDescription{
+    min-height: 10vh;
+}
+
+#removeTask{
+    cursor: pointer;
+    background-color: rgb(180, 137, 128);
+    transition: all 0.35s;
+    width: 10%;
+    margin-left: auto;
+    border-radius: 0.25em;
+}
+
+#removeTask:hover{
+    background-color: rgb(210, 75, 26);
+}
+
+/* #taskTitle,#taskDescription{
+    border: 1px solid black;
+} */
+
